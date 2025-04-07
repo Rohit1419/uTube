@@ -2,6 +2,7 @@ const asyncHandler = (requesthandler) => async (req, res, next) => {
   try {
     await requesthandler(req, res, next);
   } catch (error) {
+    console.log("error in asyncHandler:", error);
     res.status(error.code || 500).json({
       succcess: false,
       message: error.message,
