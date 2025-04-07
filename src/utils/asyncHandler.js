@@ -1,4 +1,4 @@
-const asynchandler = (requesthandler) => async (req, res, next) => {
+const asyncHandler = (requesthandler) => async (req, res, next) => {
   try {
     await requesthandler(req, res, next);
   } catch (error) {
@@ -9,7 +9,7 @@ const asynchandler = (requesthandler) => async (req, res, next) => {
   }
 };
 
-export { asynchandler };
+export { asyncHandler };
 
 // also can use this this index
 
