@@ -18,7 +18,7 @@ import userRouter from "./routes/user.router.js";
 app.use("/api/v1/users", userRouter);
 
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  res.send("Get the fuck out of my server ");
 });
 
 export default app;

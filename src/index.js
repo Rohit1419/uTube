@@ -1,5 +1,4 @@
 import dotenv from "dotenv";
-import mongoose from "mongoose";
 import connectDB from "./db/db.js";
 import app from "./app.js";
 
@@ -10,7 +9,7 @@ connectDB()
       console.log("Error: ", error);
     });
 
-    app.listen(process.env.PORT || 8000, () => {
+    app.listen(process.env.PORT || 5000, () => {
       console.log(`Server is listining on port : ${process.env.PORT}`);
     });
   })
