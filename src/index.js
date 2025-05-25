@@ -10,7 +10,9 @@ connectDB()
     });
 
     app.listen(process.env.PORT || 5000, () => {
-      console.log(`Server is listining on port : ${process.env.PORT}`);
+      console.log(
+        `Server is listining on port : https://localhost:${process.env.PORT}`
+      );
     });
   })
   .catch((error) => {
